@@ -1,0 +1,42 @@
+{
+  "name": "pi-clockwork",
+  "version": "0.1.0",
+  "description": "Durable recurring task scheduler extension for pi.",
+  "type": "module",
+  "keywords": ["pi-package", "pi", "scheduler", "automation"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunoorsolon/pi-clockwork.git"
+  },
+  "bugs": {
+    "url": "https://github.com/brunoorsolon/pi-clockwork/issues"
+  },
+  "homepage": "https://github.com/brunoorsolon/pi-clockwork#readme",
+  "pi": {
+    "extensions": ["./extensions"]
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/*.test.ts"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*",
+    "typebox": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.78.1",
+    "@earendil-works/pi-tui": "^0.78.1",
+    "@types/node": "^22.15.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "typebox": "^1.2.2"
+  },
+  "files": [
+    "extensions",
+    "src",
+    "README.md",
+    "package.json"
+  ]
+}

@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Pi local runtime state
+.pi/
+
+# Build/test output
+dist/
+build/
+coverage/
+.nyc_output/
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Pack artifacts
+*.tgz
+
+# Environment/local config
+.env
+.env.*
+!.env.example
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
